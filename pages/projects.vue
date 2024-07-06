@@ -10,7 +10,7 @@
       <img class="section-arrow" src="/icons/arrow.svg">
       <p class="font-fira_regular text-white text-sm">projects</p>
     </div>
-    
+
     <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
@@ -19,10 +19,10 @@
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col">
-  
+
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -31,7 +31,7 @@
     <!-- content -->
 
     <div class="flex flex-col w-full overflow-hidden">
-      
+
       <!-- windows tab -->
       <div class="tab-height w-full hidden lg:flex border-bot items-center">
         <div class="flex items-center border-right h-full">
@@ -288,13 +288,13 @@ export default {
         // set flex to projects-case
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
-        
+
       }else{
         // set grid to projects-case
         document.getElementById('projects-case').classList.add('grid');
         document.getElementById('not-found').classList.add('hidden');
       }
-      
+
     },
     hiddeSection() {
       document.getElementById('filter-menu').classList.toggle('hidden');
