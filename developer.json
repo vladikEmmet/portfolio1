@@ -1,0 +1,153 @@
+{
+    "name": "Vladislav Obedkov",
+    "logo_name": "vladislav-obedkov",
+    "role": "Front-end developer",
+    "about": {
+        "sections": {
+            "professional-info": {
+                "title": "professional-info",
+                "icon": "icons/info-professional.svg",
+                "info": {
+                    "experience": {
+                        "title": "experience",
+                        "description": "<br>I've been developing for about 2 years. I spent most of this time freelancing. The relatively quick turnover of projects I worked on allowed me to understand many technologies and significantly expand my skill set."
+                    },
+                    "hard-skills": {
+                        "title": "hard-skills",
+                        "description": "<br>As a front-end developer, I must know basic website design tools such as <strong>Figma</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>. <br> <br> \nBesides website design, I know javascript and its two most popular frameworks (in fact, one of the most popular frameworks and the most popular library): <strong>React</strong> (along with <strong>Next.js</strong>) and <strong>VueJS</strong> (along with <strong>Nuxt.js</strong>). <br> <br> For typing (which I think is necessary) I use <strong>TypeScript</strong>. <br> <br> Everyone knows about the benefits of state managers, including me, so I learned more than one: <strong>Redux, TanStack, Zustand, MobX</strong>. <br> <br> In addition to browser javascript, I have a good understanding of the server side: I know <strong>Express.js</strong> and <strong>NestJS</strong>. <br> <br> Among other skills, I can highlight knowledge of <strong>Python, Git, SQL</strong> and <strong>MongoDB</strong>, build tools and package manager (for example, <strong>Webpack, npm, Yarn</strong>), understanding of client-server interaction (<strong>WebSocket, REST</strong>)."
+                    },
+                    "soft-skills": {
+                        "title": "soft-skills",
+                        "description": "<br>My strength is <strong>critical thinking</strong>. It is this skill that helps me quickly and accurately analyze and filter information, which results in a high learning speed. <br><br> I consider <strong>time management</strong> skills to be an equally important feature of any developer. They are the ones who turn an amateur into a specialist ready to work in a team. Time management is a separate science that I study every day. <br><br> Another nice skill that is especially important for employers and that I possess is <strong>the ability to listen</strong> to the customer. This allows the business to save time discussing the same problem for the tenth time and concentrate on the tasks at hand."
+                    }
+                }
+            },
+            "personal-info": {
+                "title": "personal-info",
+                "icon": "icons/info-personal.svg",
+                "info": {
+                    "bio": {
+                        "title": "bio",
+                        "description": "<br> About me <br> Hello, my name is Vladislav. I'm 21 years old and from Kazakhstan. I've been studying web development since school. It all started with some video on YouTube about website design. I actively started learning html, and after that css. <br><br> After a long break, I started learning Javascript and soon received my first order - thus began a period of commercial development that continues to this day (1 year)."
+                    },
+                    "interests": {
+                        "title": "interests",
+                        "description": "<br>I am constantly learning something new, and in my free time I try to improve on what I already know. <br><br> In addition to development, I am interested in music. I not only listen to it, but also reproduce it with my guitar, and also try to create my own. I am a laureate of many republican guitar playing competitions"
+                    },
+                    "education": {
+                        "title": "education",
+                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "files": {
+                            "high-school": "<br>In high school, I tried to disengage from studying subjects that I did not consider most important for my future career. This allowed me to delve deeper into areas of interest to me, including web development. <br><br> However, I always studied well and never had grades lower than 4 (on a five-point scale).",
+                            "university": "<br>I studied at the First St. Petersburg State Medical University named after Pavlov, majoring in pediatrics. Two years later, I realized that medicine was not interesting to me and took up programming in depth. <br><br> Currently I am studying at Astana IT University, majoring in Big Data Analysis, where I actively participate in the educational process."
+                        }
+                    }
+                }
+            },
+            "hobbies-info": {
+                "title": "hobbies-info",
+                "icon": "icons/info-hobbies.svg",
+                "info": {
+                    "sports": {
+                        "title": "sports",
+                        "description": "<br>I am an avid sports fan. My favorite sport is definitely chess, which I have been doing since I was 6 years old. However, sports should maintain not only a person’s intellect, but also their physical condition in good health. Realizing this, I constantly discover new directions for myself - from basketball to boxing."
+                    },
+                    "favorite-games": {
+                        "title": "favorite-games",
+                        "description": "<br>I love games, especially those that are competitive and show your skill (that's why I chose chess as a child). Usually these are games that have a rating system: Dota 2 and Counter-Strike 2. <br><br> In my opinion, every person should control the time he spends on such entertainment. It is thanks to proper time management that I find a balance between learning and leisure."
+                    }
+                }
+            }
+        }
+    },
+    "contacts": {
+        "direct": {
+            "title": "contacts",
+            "sources": {
+                "email": "vladikobdk@gmail.com",
+                "phone": "+77719041930"
+            }
+        },
+        "social": {
+            "github": {
+                "title": "Github profile",
+                "url": "https://github.com/",
+                "user": "vladikEmmet"
+            },
+            "facebook": {
+                "title": "Facebook profile",
+                "url": "https://facebook.com/",
+                "user": "username"
+            },
+            "twitter": {
+                "title": "Twitter account",
+                "url": "https://twitter.com/",
+                "user": "username"
+            },
+            "telegram": {
+                "title": "Telegram account",
+                "url": "https://t.me/",
+                "user": "vladikobdk"
+            },
+            "linkedIn": {
+                "title": "LinkedIn account",
+                "url": "https://www.linkedin.com/in/",
+                "user": "vladislav-obedkov-915201284"
+            }
+        },
+        "find_me_also_in": {
+            "title": "find-me-also-in",
+            "sources": {
+                "instagram": {
+                    "title": "Instagram account",
+                    "url": "https://www.instagram.com/",
+                    "user": "_vladi_k"
+                }
+            }
+        }
+    },
+    "gists": {
+        "1": "fca4da98aa26136fdad514466e1718ff",
+        "2": "07273d5e0bbe92ab9bce7b358c10d658"
+    },
+    "projects": {
+        "1": {
+            "title": "_chess-game",
+            "description": "Chess, with the ability to play alone or against the computer, as well as solve random chess problems.",
+            "img": "/images/projects/chess.png",
+            "tech": ["React", "Typescript"],
+            "url": "https://github.com/vladikEmmet/chess.git",
+            "demo": "https://chess-ecru-kappa.vercel.app/"
+        },
+        "2": {
+            "title": "_amazoom",
+            "description": "A simple online hardware store. My introduction to NextJS happened there.",
+            "img": "/images/projects/amazon.png",
+            "tech": ["React", "Typescript", "Redux", "NextJS"],
+            "url": "https://github.com/vladikEmmet/kingcode-client.git"
+        },
+        "3": {
+            "title": "_color_manager",
+            "description": "Website for color selection using vanilla javascript.",
+            "img": "/images/projects/color-manager.png",
+            "tech": ["VanillaJS"],
+            "url": "https://github.com/vladikEmmet/color-manager.git",
+            "demo": "https://color-manager.vercel.app/"
+        },
+        "4": {
+            "title": "_portfolio",
+            "description": "Exactly the website you are on right now.",
+            "img": "/images/projects/portfolio.png",
+            "tech": ["Vue", "Nuxt"],
+            "url": "https://github.com/vladikEmmet/portfolio.git",
+            "demo": "https://github.com/"
+        },
+        "5": {
+            "title": "_online_school",
+            "description": "A website for an online school. This can help parents develop children's skills in various areas of IT.",
+            "img": "/images/projects/kingcode.png",
+            "tech": ["React", "Typescript", "NextJS"],
+            "demo": "https://kingcodeschool.com/"
+        }
+    }
+}
