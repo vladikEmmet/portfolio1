@@ -43,7 +43,6 @@
         <div class="certificate-img-container"
              ref="certificateImgContainer">
           <img src="/images/certificates/well-being.jpeg" alt="Certificate4-yale" class="certificate-img">
-<!--          src="https://coursera-certificate-images.s3.amazonaws.com/WUWSWVYS9ZW7"-->
         </div>
         <div class="recipient-info">
           <a href="https://coursera.org/share/f63b9efa1aec7c300896870df60d8731">The Science of Well-Being</a>

@@ -6,7 +6,7 @@
     	<div class="css-blurry-gradient-green"></div>
 
 		<section class="hero">
-		
+
 			<div class="head">
 				<span>
 					Hi all, I am
@@ -51,7 +51,7 @@
 
 <style>
 
-#hello { 
+#hello {
   display: flex;
   height: 100%;
   width: 100%;
@@ -63,7 +63,7 @@
 .hero {
 	width: 100%;
 	justify-content: center;
-	
+
 }
 .game {
 	display: flex;
@@ -212,7 +212,7 @@
 		font-size: 20px;
 		color: #43D9AD;
 	}
-	
+
 	#info .action {
 		display: none;
 	}
@@ -303,14 +303,11 @@ export default {
       this.isMobile = true
     }
 
-    // Escuchamos los cambios de tamaño de pantalla
     window.addEventListener('resize', this.handleResize)
 
-    // When the component is mounted, we can remove the loader.
     this.loading = false
   },
   beforeDestroy() {
-    // Remove the event listener when the component is destroyed.
     window.removeEventListener('resize', this.handleResize)
   },
   methods: {

@@ -271,26 +271,24 @@ export default {
   methods: {
     filterProjects(tech) {
 
-      document.getElementById('icon-tech-' + tech).classList.toggle('active'); // change tech icon opacity
-      document.getElementById('title-tech-' + tech).classList.toggle('active'); // change tech text color
+      document.getElementById('icon-tech-' + tech).classList.toggle('active');
+      document.getElementById('title-tech-' + tech).classList.toggle('active');
 
       const check = document.getElementById(tech);
       if (check.checked) {
-        this.filters = this.filters.filter((item) => item !== 'all'); // remove 'all' from filters
-        this.filters.push(tech) // add tech to filters
+        this.filters = this.filters.filter((item) => item !== 'all');
+        this.filters.push(tech);
       } else {
-        this.filters = this.filters.filter((item) => item !== tech); // remove tech from filters
-        this.filters.length === 0 ? this.filters.push('all') : null; // add 'all' to filters if filters is empty
+        this.filters = this.filters.filter((item) => item !== tech);
+        this.filters.length === 0 ? this.filters.push('all') : null;
       }
       this.filters[0] == 'all' ? this.projects = this.config.dev.projects : this.projects = this.filterProjectsBy(this.filters);
 
       if(this.projects.length === 0){
-        // set flex to projects-case
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
 
-      }else{
-        // set grid to projects-case
+      } else {
         document.getElementById('projects-case').classList.add('grid');
         document.getElementById('not-found').classList.add('hidden');
       }
@@ -301,9 +299,9 @@ export default {
       document.getElementsByClassName('section-arrow')[0].classList.toggle('rotate-90');
     },
     filterProjectsBy(filters) {
-      const projectArray = Object.values(this.config.public.dev.projects);
+      const projectArray = Object.values(this.config.dev.projects);
       return projectArray.filter(project => {
-        return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
+        return filters.every(filter => project.tech.includes(filter));
       });
     },
   },
