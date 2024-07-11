@@ -140,7 +140,7 @@
             "img": "/images/projects/portfolio.png",
             "tech": ["Vue", "Nuxt"],
             "url": "https://github.com/vladikEmmet/portfolio1.git",
-            "demo": "https://github.com/"
+            "demo": "https://vladislavobedkov.me/"
         },
         "5": {
             "title": "_online_school",
