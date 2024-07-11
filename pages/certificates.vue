@@ -6,47 +6,15 @@
     </div>
 
     <div class="certificates-wrap">
-      <div class="certificate-container">
-        <div class="certificate-img-container"
-             ref="certificateImgContainer">
-          <img src="/images/certificates/gc-ml.png" alt="Certificate1-google" class="certificate-img">
-        </div>
-        <div class="recipient-info">
-          <a :href="certificateData.image">Google Cloud / ML learning</a>
-          <p>{{ formattedDate }}</p>
-        </div>
-      </div>
-
-      <div class="certificate-container">
-        <div class="certificate-img-container"
-             ref="certificateImgContainer">
-          <img src="/images/certificates/sql_stepik.png" alt="Certificate2-stepik" class="certificate-img">
-        </div>
-        <div class="recipient-info">
-          <a href="https://stepik.org/cert/2407297?lang=en">Interactive SQL Simulator</a>
-          <p>02.04.2024</p>
-        </div>
-      </div>
-
-      <div class="certificate-container">
-        <div class="certificate-img-container"
-             ref="certificateImgContainer">
-          <img src="/images/certificates/managing-emotions.jpeg" alt="Certificate3-yale" class="certificate-img">
-        </div>
-        <div class="recipient-info">
-          <a href="https://coursera.org/share/d4337e87f459ab1657f7da8c75ad3011">Managing Emotions in Times of Uncertainty & Stress</a>
-          <p>02.04.2024</p>
-        </div>
-      </div>
-
-      <div class="certificate-container">
-        <div class="certificate-img-container"
-             ref="certificateImgContainer">
-          <img src="/images/certificates/well-being.jpeg" alt="Certificate4-yale" class="certificate-img">
-        </div>
-        <div class="recipient-info">
-          <a href="https://coursera.org/share/f63b9efa1aec7c300896870df60d8731">The Science of Well-Being</a>
-          <p>14.04.2024</p>
+      <div class="certificates-wrap">
+        <div v-for="certificate in certificates" :key="certificate.id" class="certificate-container">
+          <div class="certificate-img-container" ref="certificateImgContainer">
+            <img :src="certificate.image" :alt="'Certificate' + certificate.id" class="certificate-img">
+          </div>
+          <div class="recipient-info">
+            <a :href="certificate.link" target="_blank">{{ certificate.title }}</a>
+            <p>{{ certificate.date }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -60,21 +28,51 @@ export default {
     return {
       loading: false,
       stopRotationBound: null,
-      certificateData: {
-        "@context": "https://w3id.org/openbadges/v2",
-        "type":"Assertion",
-        "id":"https://api-lb.appfurther.io/v2/ims/28260629628891",
-        "badge":"https://api-lb.appfurther.io/v2/ims/badgeClass/28260629628891",
-        "image":"https://api-lb.appfurther.io/v2/ims/image/28260629628891",
-        "verification":{"type":"HostedBadge"},
-        "issuedOn":"2024-02-24T08:00:07.276Z",
-        "recipient": {
-          "type":"email",
-          "hashed":false,
-          "identity":"vladikobdk@gmail.com"
+      // certificateData: {
+      //   "@context": "https://w3id.org/openbadges/v2",
+      //   "type":"Assertison",
+      //   "id":"https://api-lb.appfurther.io/v2/ims/28260629628891",
+      //   "badge":"https://api-lb.appfurther.io/v2/ims/badgeClass/28260629628891",
+      //   "image":"https://api-lb.appfurther.io/v2/ims/image/28260629628891",
+      //   "verification":{"type":"HostedBadge"},
+      //   "issuedOn":"2024-02-24T08:00:07.276Z",
+      //   "recipient": {
+      //     "type":"email",
+      //     "hashed":false,
+      //     "identity":"vladikobdk@gmail.com"
+      //   },
+      //   "evidence":[]
+      // },
+      certificates: [
+        {
+          id: 1,
+          title: "Google Cloud / ML learning",
+          date: "24.02.2024",
+          image: "/images/certificates/gc-ml.png",
+          link: "https://verified.sertifier.com/en/verify/28260629628891/?ref=email"
         },
-        "evidence":[]
-      }
+        {
+          id: 2,
+          title: "Interactive SQL Simulator",
+          date: "02.04.2024",
+          image: "/images/certificates/sql_stepik.png",
+          link: "https://stepik.org/cert/2407297?lang=en"
+        },
+        {
+          id: 3,
+          title: "Managing Emotions in Times of Uncertainty & Stress",
+          date: "02.04.2024",
+          image: "/images/certificates/managing-emotions.jpeg",
+          link: "https://coursera.org/share/3dc61461d81d4caebd9d041c5ad8f3e6"
+        },
+        {
+          id: 4,
+          title: "The Science of Well-Being",
+          date: "14.04.2024",
+          image: "/images/certificates/well-being.jpeg",
+          link: "https://coursera.org/share/f63b9efa1aec7c300896870df60d8731"
+        }
+      ]
     };
   },
   computed: {
