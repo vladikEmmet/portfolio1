@@ -9,7 +9,7 @@
       <div class="certificates-wrap">
         <div v-for="certificate in certificates" :key="certificate.id" class="certificate-container">
           <div class="certificate-img-container" ref="certificateImgContainer">
-            <img :src="certificate.image" :alt="'Certificate' + certificate.id" class="certificate-img">
+            <img @load="() => console.log(1)" :src="certificate.image" :alt="'Certificate' + certificate.id" class="certificate-img">
           </div>
           <div class="recipient-info">
             <a :href="certificate.link" target="_blank">{{ certificate.title }}</a>
@@ -74,13 +74,7 @@ export default {
         }
       ]
     };
-  },
-  computed: {
-    formattedDate() {
-      const date = new Date(this.certificateData.issuedOn);
-      return date.toLocaleDateString();
-    }
-  },
+  }
 };
 </script>
 
@@ -128,7 +122,4 @@ export default {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-
-
 </style>
-
