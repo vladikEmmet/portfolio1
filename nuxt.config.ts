@@ -32,13 +32,12 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'A awesome developer portfolio design.' },
+        { hid: 'description', name: 'description', content: 'Vladislav Obedkov - frontend developer.' },
         { hid: 'og:title', property: 'og:title', content: siteTitle },
-        { hid: 'og:description', property: 'og:description', content: 'A awesome developer portfolio design.' },
+        { hid: 'og:description', property: 'og:description', content: 'Vladislav Obedkov - frontend developer.' },
         { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
-        { hid: 'og:url', property: 'og:url', content: 'https://developer-portfolio-v1.netlify.app/' },
+        { hid: 'og:url', property: 'og:url', content: 'https://vladislavobedkov.me' },
         { name: 'theme-color', content: '#010C15' },
-        // ...
       ],
       link: [
         { rel: 'manifest', href: 'pwa/manifest.json' },
