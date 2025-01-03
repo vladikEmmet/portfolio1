@@ -141,6 +141,13 @@
             "tech": ["Vue", "Nuxt"],
             "url": "https://github.com/vladikEmmet/portfolio1.git",
             "demo": "https://vladislavobedkov.me/"
+        },
+        "5": {
+            "title": "_it-school-website",
+            "description": "Fullstack web application for a real IT school.",
+            "img": "/images/projects/kingcode.png",
+            "tech": ["React", "Typescript", "NextJS"],
+            "url": "https://github.com/vladikEmmet/kingcode-client"
         }
     }
 }
