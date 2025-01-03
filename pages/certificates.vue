@@ -46,27 +46,41 @@ export default {
       certificates: [
         {
           id: 1,
-          title: "Google Cloud / ML learning",
-          date: "24.02.2024",
-          image: "/images/certificates/gc-ml.png",
-          link: "https://verified.sertifier.com/en/verify/28260629628891/?ref=email"
+          title: "Generative AI Development",
+          date: "16.08.2024",
+          image: "/images/certificates/gen-ai.png",
+          link: "https://verified.sertifier.com/en/verify/25052450820962/"
         },
         {
           id: 2,
+          title: "Google Cloud / ML learning",
+          date: "24.02.2024",
+          image: "/images/certificates/gc-ml.png",
+          link: "https://verified.sertifier.com/en/verify/28260629628891/"
+        },
+        {
+          id: 3,
+          title: "Python Essentials 1",
+          date: "12.12.2024",
+          image: "/images/certificates/python-essentials-1.png",
+          link: "https://www.credly.com/badges/920c19c0-290c-4773-be23-8e03f020d609/public_url"
+        },
+        {
+          id: 4,
           title: "Interactive SQL Simulator",
           date: "02.04.2024",
           image: "/images/certificates/sql_stepik.png",
           link: "https://stepik.org/cert/2407297?lang=en"
         },
         {
-          id: 3,
+          id: 5,
           title: "Managing Emotions in Times of Uncertainty & Stress",
           date: "02.04.2024",
           image: "/images/certificates/managing-emotions.jpeg",
           link: "https://coursera.org/share/3dc61461d81d4caebd9d041c5ad8f3e6"
         },
         {
-          id: 4,
+          id: 6,
           title: "The Science of Well-Being",
           date: "14.04.2024",
           image: "/images/certificates/well-being.jpeg",

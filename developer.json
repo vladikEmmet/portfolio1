@@ -28,7 +28,7 @@
                 "info": {
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> Hello, my name is Vladislav. I'm 21 years old and from Kazakhstan. I've been studying web development since school. It all started with some video on YouTube about website design. I actively started learning html, and after that css. <br><br> After a long break, I started learning Javascript and soon received my first order - thus began a period of commercial development that continues to this day (1 year)."
+                        "description": "<br> About me <br> Hello, my name is Vladislav. I'm 21 years old and from Kazakhstan. I've been studying web development since school. It all started with some video on YouTube about website design. I actively started learning html, and after that css. <br><br> After a long break, I started learning Javascript and soon received my first order - thus began a period of commercial development that continues to this day (1.5 years)."
                     },
                     "interests": {
                         "title": "interests",
@@ -36,7 +36,7 @@
                     },
                     "education": {
                         "title": "education",
-                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "description": "<br>I have always been passionate about technology and design, which led me to pursue a career as a frontend developer. My education laid a strong foundation in computer science, programming, and user interface design. Through both formal studies and self-driven learning, I have gained expertise in HTML, CSS, JavaScript, and modern frontend frameworks. <br><br> I continuously enhance my knowledge by completing online courses (you can take a look at my certificates to see for yourself), attending workshops, and staying up to date with the latest industry trends. This commitment to lifelong learning ensures that I deliver clean, responsive, and user-friendly interfaces that meet the demands of today’s digital landscape.",
                         "files": {
                             "high-school": "<br>In high school, I tried to disengage from studying subjects that I did not consider most important for my future career. This allowed me to delve deeper into areas of interest to me, including web development. <br><br> However, I always studied well and never had grades lower than 4 (on a five-point scale).",
                             "university": "<br>I studied at the First St. Petersburg State Medical University named after Pavlov, majoring in pediatrics. Two years later, I realized that medicine was not interesting to me and took up programming in depth. <br><br> Currently I am studying at Astana IT University, majoring in Big Data Analysis, where I actively participate in the educational process."
@@ -141,13 +141,6 @@
             "tech": ["Vue", "Nuxt"],
             "url": "https://github.com/vladikEmmet/portfolio1.git",
             "demo": "https://vladislavobedkov.me/"
-        },
-        "5": {
-            "title": "_online_school",
-            "description": "A website for an online school. This can help parents develop children's skills in various areas of IT.",
-            "img": "/images/projects/kingcode.png",
-            "tech": ["React", "Typescript", "NextJS"],
-            "demo": "https://kingcodeschool.com/"
         }
     }
 }
