@@ -9,12 +9,12 @@
       <div class="certificates-wrap">
         <div v-for="certificate in certificates" :key="certificate.id" class="certificate-container">
           <div class="certificate-img-container">
-  <SkeletonImage
-    :src="certificate.image"
-    :alt="'Certificate ' + certificate.id"
-    aspect="600/424"
-  />
-</div>
+            <SkeletonImage
+              :src="certificate.image"
+              :alt="'Certificate ' + certificate.id"
+              aspect="600/424"
+            />
+          </div>
 
           <div class="recipient-info">
             <a :href="certificate.link" target="_blank">{{ certificate.title }}</a>

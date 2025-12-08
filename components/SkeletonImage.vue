@@ -1,15 +1,14 @@
 <template>
   <div class="wrapper" :style="{ aspectRatio: aspect }">
 
-    <!-- Skeleton -->
     <div v-if="!loaded" class="skeleton"></div>
 
-    <!-- Image -->
     <img
       ref="img"
       :src="src"
       :alt="alt"
       class="image"
+      :class="{ loaded: loaded }"
       @load="onLoad"
       draggable="false"
     />
@@ -33,7 +32,6 @@ export default {
   mounted() {
     const img = this.$refs.img;
 
-    // Если изображение уже загружено (из кеша) → убрать skeleton
     if (img.complete) {
       this.loaded = true;
     }
@@ -55,7 +53,6 @@ export default {
   user-select: none;
 }
 
-/* SKELETON */
 .skeleton {
   position: absolute;
   inset: 0;
@@ -63,23 +60,30 @@ export default {
   background-size: 200% 100%;
   animation: skeleton-loading 1.2s infinite;
   border-radius: 8px;
+  z-index: 1;
 }
 
-/* IMAGE */
 .image {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  
   opacity: 0;
-  transition: opacity 0.3s ease;
+  filter: blur(15px);
+  transform: scale(1.05);
+
+  transition:
+    opacity 0.35s ease,
+    filter 0.45s ease,
+    transform 0.45s ease;
 }
 
-/* Плавное появление */
-.image[src] {
+.image.loaded {
   opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
 }
 
-/* анимация скелетона */
 @keyframes skeleton-loading {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
