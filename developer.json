@@ -10,7 +10,7 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "<br>I've been developing for about 3 years. I spent most of this time freelancing. The relatively quick turnover of projects I worked on allowed me to understand many technologies and significantly expand my skill set."
+                        "description": "<br>I've been developing for about 3 years. I also spent a lot of time freelancing. The relatively quick turnover of projects I worked on allowed me to understand many technologies and significantly expand my skill set. <br><br>In the last year, I have also taken on team lead responsibilities: planning tasks, reviewing code, mentoring junior developers and making architectural decisions to keep the development process consistent and efficient."
                     },
                     "hard-skills": {
                         "title": "hard-skills",
@@ -18,7 +18,7 @@
                     },
                     "soft-skills": {
                         "title": "soft-skills",
-                        "description": "<br>My strength is <strong>critical thinking</strong>. It is this skill that helps me quickly and accurately analyze and filter information, which results in a high learning speed. <br><br> I consider <strong>time management</strong> skills to be an equally important feature of any developer. They are the ones who turn an amateur into a specialist ready to work in a team. Time management is a separate science that I study every day. <br><br> Another nice skill that is especially important for employers and that I possess is <strong>the ability to listen</strong> to the customer. This allows the business to save time discussing the same problem for the tenth time and concentrate on the tasks at hand."
+                        "description": "<br>My strength is <strong>critical thinking</strong>. It is this skill that helps me quickly and accurately analyze and filter information, which results in a high learning speed. <br><br> I consider <strong>time management</strong> skills to be an equally important feature of any developer. They are the ones who turn an amateur into a specialist ready to work in a team. Time management is a separate science that I study every day. <br><br> Another nice skill that is especially important for employers and that I possess is <strong>the ability to listen</strong> to the customer. This allows the business to save time discussing the same problem for the tenth time and concentrate on the tasks at hand. <br><br>Additionally, I have team leadership experience: coordinating developers, maintaining a healthy workflow, helping with technical decisions, and mentoring less experienced teammates."
                     }
                 }
             },
@@ -28,7 +28,7 @@
                 "info": {
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> Hello, my name is Vladislav. I'm 23 years old and from Kazakhstan. I've been studying web development since school. It all started with some video on YouTube about website design. I actively started learning html, and after that css. <br><br> After a long break, I started learning Javascript and soon received my first order - thus began a period of commercial development that continues to this day (1.5 years)."
+                        "description": "<br> About me <br> Hello, my name is Vladislav. I'm 23 years old and from Kazakhstan. I've been studying web development since school. It all started with some video on YouTube about website design. I actively started learning html, and after that css. <br><br> After a long break, I started learning Javascript and soon received my first order — thus began a period of commercial development that continues to this day (1.5 years). Over this time, I’ve worked on many projects in different teams, and more recently I’ve also taken on team lead responsibilities such as code reviewing, mentoring and helping guide technical decisions."
                     },
                     "interests": {
                         "title": "interests",
