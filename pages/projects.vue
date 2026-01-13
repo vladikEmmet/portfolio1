@@ -67,29 +67,45 @@
             <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4>
           </span>
 
-          <div id="project-card" class="flex flex-col">
+          <div id="project-card" class="flex flex-col project-card">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img
+                  v-for="tech in project.tech"
+                  :key="tech"
+                  :src="'/icons/techs/filled/' + tech.toLowerCase() + '.svg'"
+                  class="w-6 h-6 mx-1 skill-icon"
+                >
               </div>
-              <img id="showcase" :src="project.img" alt="" class="">
+              <img id="showcase" :src="project.img">
             </div>
 
-            <div class="pb-8 pt-6 px-6 border-top">
+            <!-- overlay -->
+            <div class="project-overlay">
               <p class="text-menu-text font-fira_retina text-sm mb-5">
                 {{ project.description }}
               </p>
-              <div class="flex justify-between align-middle">
-                <template v-if="project.demo">
-                  <a id="view-button" :href="project.demo" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                    view-project
-                  </a>
-                </template>
-                <template v-if="project.url">
-                  <a id="github-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                    <img src="/icons/social/github.svg"/>
-                  </a>
-                </template>
+
+              <div class="flex justify-between">
+                <a
+                  v-if="project.demo"
+                  :href="project.demo"
+                  target="_blank"
+                  id="view-button"
+                  class="text-white py-2 px-4 text-xs rounded-lg"
+                >
+                  view-project
+                </a>
+
+                <a
+                  v-if="project.url"
+                  :href="project.url"
+                  target="_blank"
+                  id="github-button"
+                  class="text-white py-2 px-4 text-xs rounded-lg"
+                >
+                  <img src="/icons/social/github.svg">
+                </a>
               </div>
             </div>
           </div>
@@ -122,10 +138,6 @@
   color: white;
 }
 
-#projects-case {
-  /* padding: 100px; */
-}
-
 #project {
   min-width: 400px;
   margin-bottom: 5px;
@@ -142,6 +154,8 @@
 #showcase {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  width: 100%;
+  height: 100%;
 }
 
 #view-button {
@@ -153,7 +167,7 @@
 }
 
 #window {
-  max-height: 120px;
+  aspect-ratio: 372/200;
   position: relative;
   overflow: hidden;
 }
@@ -203,6 +217,40 @@ input[type="checkbox"]:focus {
   box-shadow: none;
 }
 
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover #showcase {
+  filter: brightness(0.7);
+  transition: filter 0.25s ease;
+}
+
+.skill-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.7));
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 18, 33, 0.95);
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   #projects-case {
     padding: 0px 25px 40px;
@@ -222,6 +270,12 @@ input[type="checkbox"]:focus {
     width: 100%;
     min-width: 100%;
     padding-inline: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #project-overlay {
+    min-width: 1024px;
   }
 }
 

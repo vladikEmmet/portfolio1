@@ -112,6 +112,19 @@
     },
     "projects": {
         "1": {
+            "title": "_telegram_content_aggregator",
+            "description": "A web-based tool that aggregates and presents Telegram channel content in a slider-style interface.",
+            "tech": ["React", "Typescript", "NextJS"],
+            "demo": "https://slider.media",
+            "img": "/images/projects/sl.jpg"
+        },
+        "2": {
+            "title": "_product_aggregator",
+            "description": "A web platform that aggregates publicly available product listings from marketplace and enables delivery to regions not supported by the original one.",
+            "tech": ["React", "Typescript", "NextJS"],
+            "img": "/images/projects/sc.png"
+        },
+        "3": {
             "title": "_chess-game",
             "description": "Chess, with the ability to play alone or against the computer, as well as solve random chess problems.",
             "img": "/images/projects/chess.png",
@@ -119,14 +132,14 @@
             "url": "https://github.com/vladikEmmet/chess.git",
             "demo": "https://chess-ecru-kappa.vercel.app/"
         },
-        "2": {
+        "4": {
             "title": "_amazoom",
             "description": "A simple online hardware store. My introduction to NextJS happened there.",
             "img": "/images/projects/amazon.png",
             "tech": ["React", "Typescript", "Redux", "NextJS"],
             "url": "https://github.com/vladikEmmet/kingcode-client.git"
         },
-        "3": {
+        "5": {
             "title": "_color_manager",
             "description": "Website for color selection using vanilla javascript.",
             "img": "/images/projects/color-manager.png",
@@ -134,7 +147,7 @@
             "url": "https://github.com/vladikEmmet/color-manager.git",
             "demo": "https://color-manager.vercel.app/"
         },
-        "4": {
+        "6": {
             "title": "_portfolio",
             "description": "Exactly the website you are on right now.",
             "img": "/images/projects/portfolio.png",
@@ -142,7 +155,7 @@
             "url": "https://github.com/vladikEmmet/portfolio1.git",
             "demo": "https://vladislavobedkov.me/"
         },
-        "5": {
+        "7": {
             "title": "_it-school-website",
             "description": "Fullstack web application for a real IT school.",
             "img": "/images/projects/kingcode.png",
