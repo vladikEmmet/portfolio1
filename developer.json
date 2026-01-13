@@ -153,7 +153,7 @@
             "img": "/images/projects/portfolio.png",
             "tech": ["Vue", "Nuxt"],
             "url": "https://github.com/vladikEmmet/portfolio1.git",
-            "demo": "https://vladislavobedkov.me/"
+            "demo": "https://obedkov.dev/"
         },
         "7": {
             "title": "_it-school-website",

@@ -274,8 +274,8 @@ input[type="checkbox"]:focus {
 }
 
 @media (min-width: 1024px) {
-  #project-overlay {
-    min-width: 1024px;
+  .project-overlay {
+    top: 20%;
   }
 }
 
